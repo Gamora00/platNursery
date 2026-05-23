@@ -1,16 +1,56 @@
-# React + Vite
+# Paradise Nursery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Paradise Nursery is a React plant shop app built around the idea of bringing nature closer to home. The app offers a collection of high-quality plants designed to improve indoor spaces, support healthier living, and help users find plants that match their home or office.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Paradise Nursery is where green meets serenity. The project focuses on plants that enhance the beauty of a space while also supporting a more sustainable lifestyle. The catalog includes options such as air-purifying plants, aromatic fragrant plants, low-maintenance plants, and decorative indoor plants.
 
-## React Compiler
+Whether someone is a seasoned gardener or just starting their green journey, Paradise Nursery presents plant options in a simple shopping experience with product listings, cart controls, quantities, and total cart pricing.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Landing page with Paradise Nursery introduction
+- Plant listing grouped by category
+- Product cards with image, title, price, and description
+- Add to cart functionality using Redux
+- Cart item count in the navbar
+- Shopping cart page with quantity controls
+- Total amount calculation
+- Responsive layout using Bootstrap
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- Redux Toolkit
+- React Redux
+- React Router
+- Bootstrap
+- Bootstrap Icons
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
