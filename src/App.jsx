@@ -1,30 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import Landing from './pages/landing'
 import Navbar from './components/navbar'
-import Listing from './pages/listing'
-import { Route, Routes } from 'react-router-dom'
-import Shopping from './pages/shopping'
+import ProductList from './pages/ProductList'
+import CartItem from './pages/CartItem'
+import AboutUs from './pages/AboutUs'
+import { Link, Route, Routes } from 'react-router-dom'
+
 function App() {
 
   return (
     <>
       <Routes>
-        <Route path="/" element={<Landing/>}/>
+        <Route path="/" element={
+          <div className="background-image landing-container">
+            <div className="landing-content">
+              <div className="landing-intro text-center">
+                <h1>
+                  Welcome To <br />
+                  Paradise Nursery
+                </h1>
+                <p>Where Green Meets Serenity</p>
+                <Link to="/listing" className="btn btn-success">Get Started</Link>
+              </div>
+              <AboutUs />
+            </div>
+          </div>
+        }/>
         <Route path="/listing" element={
           <>
           <Navbar/>
-          <Listing/></>
+          <ProductList/></>
           }/>
           
-          <Route path="/shopping" element={
+           <Route path="/shopping" element={
           <>
           <Navbar/>
-          <Shopping/></>
-          }/>
+          <CartItem/></>
+           }/>
+          <Route path="/cart" element={
+          <>
+          <Navbar/>
+          <CartItem/></>
+           }/>
       </Routes>
     
       

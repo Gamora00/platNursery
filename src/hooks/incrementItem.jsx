@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { incrementItem, decrementItem } from '../redux/cartSlice'
+import { incrementItem, decrementItem } from '../redux/CartSlice'
 
 function useIncrement() {
   const dispatch = useDispatch()

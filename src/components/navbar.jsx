@@ -13,11 +13,14 @@ function Navbar() {
           <span className="fw-bold">Paradise Nursery</span>
         </Link>
 
-        <span className="position-absolute start-50 translate-middle-x fw-semibold fs-5">
-          Plant
-        </span>
+        <div className="position-absolute start-50 translate-middle-x d-flex align-items-center gap-3">
+          <span className="fw-semibold fs-5">Plant</span>
+          <Link to="/" className="text-decoration-none text-dark">Home</Link>
+          <Link to="/listing" className="text-decoration-none text-dark">Plants</Link>
+          <Link to="/cart" className="text-decoration-none text-dark">Cart</Link>
+        </div>
 
-        <Link to="/shopping" className="ms-auto text-dark fs-4">
+        <Link to="/cart" className="ms-auto text-dark fs-4">
           <i className="bi bi-cart position-relative">
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               {totalItems}

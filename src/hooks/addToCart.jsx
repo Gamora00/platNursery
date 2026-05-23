@@ -1,12 +1,12 @@
 import {useSelector, useDispatch} from 'react-redux'
-import { addToCart } from '../redux/cartSlice'
+import { addItem } from '../redux/CartSlice'
 function useCart() {
   const dispatch = useDispatch()
   const cartItems = useSelector((state)=> state.cart.items)
 
 
   const handleAddToCart = (plant) =>{
-    dispatch(addToCart(plant))
+    dispatch(addItem(plant))
   }
 
   const isInCart = (plant) =>{
