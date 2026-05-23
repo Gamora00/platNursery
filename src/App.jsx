@@ -1,5 +1,4 @@
 import './App.css'
-import Navbar from './components/navbar'
 import ProductList from './pages/ProductList'
 import CartItem from './pages/CartItem'
 import AboutUs from './pages/AboutUs'
@@ -25,22 +24,10 @@ function App() {
             </div>
           </div>
         }/>
-        <Route path="/listing" element={
-          <>
-          <Navbar/>
-          <ProductList/></>
-          }/>
+        <Route path="/listing" element={<ProductList/>}/>
           
-           <Route path="/shopping" element={
-          <>
-          <Navbar/>
-          <CartItem/></>
-           }/>
-          <Route path="/cart" element={
-          <>
-          <Navbar/>
-          <CartItem/></>
-           }/>
+          <Route path="/shopping" element={<CartItem/>}/>
+          <Route path="/cart" element={<CartItem/>}/>
       </Routes>
     
       
